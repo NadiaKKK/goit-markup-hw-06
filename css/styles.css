@@ -227,7 +227,7 @@ nav {
   color: #e5e5e5;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1, 14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -485,6 +485,71 @@ li .list :not(:last-child) {
 .icon-close {
   width: 18px;
   height: 18px;
+}
+
+/* Форма */
+
+.form-title {
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 40px 40px 30px 40px;
+}
+
+.form-field-name {
+  color: #757575;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1, 16;
+  letter-spacing: 0.01em;
+
+  padding-bottom: 4px;
+}
+
+.form {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  width: 528px;
+}
+
+.form-field {
+  position: relative;
+
+  margin-bottom: 10px;
+}
+
+.form-input {
+  width: 100%;
+  margin: 0;
+  padding: 11px 12px;
+  padding-left: 43px;
+  font: inherit;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.input-img {
+  position: absolute;
+  left: 15px;
+  top: 12px;
+
+  width: 18px;
+  height: 18px;
+}
+
+.form-input:focus,
+.form-input:hover {
+  border: 1px solid #2196f3;
+  cursor: pointer;
+}
+
+.form-field:hover > .input-img,
+.form-field:focus-within > .input-img {
+  fill: var(--accent-color);
 }
 
 /* Features */
