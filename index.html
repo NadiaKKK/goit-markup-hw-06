@@ -108,12 +108,25 @@
 </div>
 
 <div class="form-field">
-
-        <textarea name="comment" id="comment" class="form-input" rows="5" placeholder="Введите текст"> </textarea>
-        <label for="comment" class="form-label"></label>
+       <label for="comment" class="form-label">Комментарий</label>
+        <textarea name="comment" id="comment" class="form-input" rows="5" placeholder="Введите текст"></textarea>
+      
 </div>
 
+
+<label for="checkbox" class="ckeckbox-label">
+<input type="checkbox" name="checkbox" class="checkbox" value="Соглашаюсь с рассылкой и принимаю" id="checkbox">
+<span class="checkbox-icon">
+ <svg class="icon-check">
+     <use href=images/sprite.svg#icon-check></use> </svg>
+</span>
+Соглашаюсь с рассылкой и принимаю <a href="" class="link-agreement">Условия договора</a>
+</label>
+
+
+<div>
         <button type="button" class=" hero button">Отправить</button>
+</div>
 
     </form>
 
@@ -593,6 +606,14 @@
 </ul>
 
 </div>
+
+<h2 class="social-links-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2> 
+
+    <label for="mail" class=""> 
+    <input type="email" class="" name="mail" id="mail" placeholder="E-mail" />
+ </label>
+
+
 </div>
 
 </footer>
