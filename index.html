@@ -81,49 +81,38 @@
 
      <form class="form"> 
 
-<span class="form-field-name">Имя</span>
-
 <div class="form-field">
 
+    <label for="name" class="form-label">Имя</label>
+    <input type="name" class="form-input" name="name" id="name" placeholder=" ">
     <svg class="input-img">
         <use href=images/sprite.svg#icon-person></use>
     </svg>
-
-    <input type="name" class="form-input" name="name" id="name" placeholder=" ">
-    <label for="name" class="form-label">Имя</label>
 </div>
 
-<span class="form-field-name">Телефон</span>
 <div class="form-field">
-
-    <div class="form-field">
-
+<label for="tel" class="form-label">Телефон</label>
+<input type="tel" class="form-input" name="tel" id="tel" placeholder=" " />
         <svg class="input-img">
             <use href=images/sprite.svg#icon-tel></use>
-        </svg>
-
-        <input type="tel" class="form-input" name="tel" id="tel" placeholder=" " />
-        <label for="tel" class="form-label">Телефон</label>
+        </svg>           
     </div>
 
-<span class="form-field-name">Почта</span>
-
 <div class="form-field">
+<label for="mail" class="form-label">Почта</label>
 
+ <input type="email" class="form-input" name="mail" id="mail" placeholder=" " />
     <svg class="input-img">
         <use href=images/sprite.svg#icon-mail></use>
-    </svg>
-    <input type="email" class="form-input" name="mail" id="mail" placeholder=" " />
-    <label for="mail" class="form-label">Почта</label>
+    </svg>       
 </div>
-
-<span class="form-field-name">Комментарий</span>
 
 <div class="form-field">
 
         <textarea name="comment" id="comment" class="form-input" rows="5" placeholder="Введите текст"> </textarea>
         <label for="comment" class="form-label"></label>
 </div>
+
         <button type="button" class=" hero button">Отправить</button>
 
     </form>

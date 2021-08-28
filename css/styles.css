@@ -456,7 +456,7 @@ li .list :not(:last-child) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  padding: 40px;
   min-height: 581px;
   min-width: 528px;
 
@@ -496,35 +496,32 @@ li .list :not(:last-child) {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  margin: 40px 40px 30px 40px;
-}
-
-.form-field-name {
-  color: #757575;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1, 16;
-  letter-spacing: 0.01em;
-
-  padding-bottom: 4px;
-}
-
-.form {
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 20px;
-  width: 528px;
+  margin-bottom: 12px;
 }
 
 .form-field {
   position: relative;
 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: stretch;
+
+  width: 100%;
   margin-bottom: 10px;
+}
+
+.form-label {
+  color: #757575;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1, 16;
+  letter-spacing: 0.01em;
 }
 
 .form-input {
   width: 100%;
-  margin: 0;
+  margin-top: 4px;
   padding: 11px 12px;
   padding-left: 43px;
   font: inherit;
@@ -535,7 +532,7 @@ li .list :not(:last-child) {
 .input-img {
   position: absolute;
   left: 15px;
-  top: 12px;
+  top: 27px;
 
   width: 18px;
   height: 18px;
@@ -545,6 +542,7 @@ li .list :not(:last-child) {
 .form-input:hover {
   border: 1px solid #2196f3;
   cursor: pointer;
+  outline: 1px solid #2196f3;
 }
 
 .form-field:hover > .input-img,
