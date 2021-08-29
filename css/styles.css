@@ -524,6 +524,9 @@ li .list :not(:last-child) {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-label {
+}
+
 .input-img {
   position: absolute;
   left: 15px;
@@ -573,24 +576,33 @@ li .list :not(:last-child) {
   color: #757575;
 }
 
+.form-label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
 .icon-check {
   width: 16px;
   height: 15px;
-  border-radius: 2px;
-  border: 1px solid #000000;
 }
 
 .checkbox-icon {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 2px;
   width: 16px;
   height: 15px;
   margin-right: 8px;
 }
 
 .checkbox:checked + .checkbox-icon {
+  border-color: var(--accent-color);
   background-color: var(--accent-color);
   border-radius: 2px;
-  border: 1px solid #000000;
 }
 
 .link-agreement {
@@ -916,7 +928,7 @@ a {
 
 .footer-container {
   display: flex;
-  align-items: top;
+  align-items: baseline;
 }
 
 .footer-subscription-form {
@@ -935,7 +947,6 @@ a {
 .footer-input {
   width: 358px;
   height: 52px;
-  margin-top: 4px;
   padding: 11px 12px;
   font: inherit;
   border-radius: 4px;
@@ -957,9 +968,9 @@ a {
 }
 
 .icon-telegram {
-  width: 30px;
-  height: 30px;
-  padding-left: 10px;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
 
 .footer-input:focus,
